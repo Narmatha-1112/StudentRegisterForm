@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-import indexRoutes from "../src/routes/index"
+import indexRoutes from "../src/routes/index.js"
 app.use('/api',indexRoutes);
 
 //mongo connection
