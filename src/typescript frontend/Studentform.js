@@ -16,8 +16,8 @@ document.getElementById('studentformdata').addEventListener('submit', async func
   data.academyMark = Number(data.academyMark);
 
   try {
-    const response = await fetch('http://localhost:3000/api/student/creates', {
-      method: 'POST',
+   const response = await fetch('https://studentregisterform.onrender.com/api/student/creates', {
+        method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
