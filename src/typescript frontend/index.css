@@ -1,53 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #222;
+  color: white;
+}
 
 
-body{
-    margin: 0;
-    background-image: url('../typescript\ frontend/com.png');
-    padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-background-color: #87ceeb;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 50px;
 }
-nav{
-   
-    font-size: 28px;
-    width:1070px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color:white;
-    margin-left:12px;
-    border-radius: 10px;
-    box-shadow: 100px white;
-    
+
+.logo {
+  font-size: 30px;
+  color: #0000FF;
+  font-weight: bold;
 }
-nav li{
-    display:inline-block;
-    margin: 0 8px;
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
-nav a
-{
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
+
+ul li {
+  margin-left: 30px;
 }
-.logo
-{
-    font-size: 36px;
-    color: blue;
-    font-weight: bolder;
-    margin-right:70px ;
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+#cont a {
+  background-color: #ff865c;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.container img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color :#fff0f5;
+  padding: 30px;
+  align-items: center;
+  background-repeat:no-repeat;
+  
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  
+}
+
+.container form {
+  background-color: #dde2e4;
+  width:400px;
+  padding: 30px;
+  height: 600px;
+  border-radius: 5px 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px;
+  border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin-left: 10px;
+  
+  
+}
+
+button {
+  background-color:  #d2691e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 300px;
 
 }
-nav a:hover{
-color:orange
+
+button:hover {
+  background-color: #d2691e;
 }
-#cont
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+a{
+  color:black;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left:20px;
+
+}
+.container
 {
-background-color: coral;
-width:100px;
-border-radius: 20px;
-text-align: center;
-height: 30px;
-padding-bottom: 5px;
+display: flex;
+justify-content: space-around;
+margin-right: 300px;
+align-items: center;
+
+ 
 }
