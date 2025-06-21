@@ -12,23 +12,26 @@
 
   <!-- Navbar Section -->
   <nav>
-    <div class="logo">DDinfoTech</div>
-    <ul>
+    <div class="logo">
+      <a href="">DDinfoTech   </a>                                      </a>
+    </div>
+       <ul class="showmenu">
       <li><a href="index.html">Home</a></li>
       <li><a href="details.html">Details</a></li>
       <li id="cont"><a href="contact.html">Contact</a></li>
-    </ul>
+      </ul>
+      <div class="menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
   </nav>
 
   <h2 style="text-align: center; margin-top: 20px;"><b>STUDENT REGISTRATION FORM</b></h2>
 
   <div class="container">
-    <div class="imgage">
-      <img style="width: 500px; height: 1184px;; border-radius:0px 0px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-left: 100px;" src="student.png">
-    </div>
-
-    <form style="width: 500px;height: auto;" id="studentformdata">
+    
+    <form  id="studentformdata">
       <label>Full Name:</label>
       <input type="text" name="fullName" required><br><br>
 
@@ -62,7 +65,7 @@
 
       <center>
         <button type="submit">Submit</button>
-        <a href="./navbar.html" style="margin-left: 20px; text-decoration: none; color: white; background-color: #ff865c; padding: 8px 20px; border-radius: 10px;">Back</a>
+
       </center>
 
     </form>
@@ -70,6 +73,16 @@
   </div>
 
   <script src="./Studentform.js"></script>
+  <script>
+const menu = document.querySelector('.menu');
+const menulist = document.querySelector('nav ul');
+
+menu.addEventListener('click', () => {
+  menulist.classList.toggle('showmenu');
+});
+
+
+</script>
 </body>
 
 </html>

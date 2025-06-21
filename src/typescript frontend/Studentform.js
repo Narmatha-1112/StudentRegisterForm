@@ -7,6 +7,7 @@ document.getElementById('studentformdata').addEventListener('submit', async func
 
   const formData = new FormData(this);
   const data = Object.fromEntries(formData.entries());
+  
 
   // Convert number 
   data.age = Number(data.age);

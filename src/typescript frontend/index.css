@@ -1,18 +1,17 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: #222;
-  color: white;
-}
 
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px 50px;
+  flex-wrap: wrap;
+}
+nav a:hover
+{
+  text-decoration:red;
 }
 
 .logo {
@@ -26,6 +25,7 @@ ul {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 ul li {
@@ -45,36 +45,36 @@ ul li a {
 }
 
 .container img {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: auto;
   border-radius: 10px;
+  margin-left: 40px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-
 body {
   font-family: Arial, sans-serif;
-  background-color :#fff0f5;
+  background-color: #ecccd9e7;
   padding: 30px;
   align-items: center;
-  background-repeat:no-repeat;
-  
+  background-repeat: no-repeat;
 }
 
 h2 {
   text-align: center;
   color: #333;
-  
 }
 
 .container form {
   background-color: #dde2e4;
-  width:400px;
+  width: 700px;
+  max-width: 400px;
   padding: 30px;
-  height: 600px;
-  border-radius: 5px 10px;
+  color:black;
+  border-radius: 0px 0px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
- 
+
 }
 
 input[type="text"],
@@ -86,22 +86,19 @@ button {
   padding: 10px;
   margin: 5px 0 20px;
   border: 1px solid #ccc;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 input[type="radio"] {
   margin-left: 10px;
-  
-  
 }
 
 button {
-  background-color:  #d2691e;
+  background-color: #d2691e;
   color: white;
   border: none;
   cursor: pointer;
-  width: 300px;
-
+  width: 100%;
 }
 
 button:hover {
@@ -113,19 +110,96 @@ label {
   display: block;
   margin-bottom: 5px;
 }
-a{
-  color:black;
+
+a {
+  color: black;
   font-weight: bold;
   text-decoration: none;
-  margin-left:20px;
+  margin-left: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0; 
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+
+
+
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
-.container
+nav{
+  background-color: darksalmon;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: blue;
+}
+nav li{
+  display: inline-block;
+  margin:0 8px;
+}
+.logo
 {
-display: flex;
-justify-content: space-around;
-margin-right: 300px;
-align-items: center;
-
+  font-size: 36px;
+  font-weight: bolder;
  
+}
+nav a:hover
+{
+  color: whitesmoke;
+}
+nav a {
+  text-decoration: none;
+}
+.menu-line
+{
+  height:3px;
+  width: 20px;
+  background-color: black;
+  margin-bottom:3px;
+}
+.menu{
+  cursor: pointer;
+  display:none;
+}
+@media all and (max-width:698px)
+{
+nav {
+flex-direction:column;
+}
+nav li {
+display: block;
+padding: 10px 0;
+}ul {
+  text-align: center;
+  padding: 0;
+  display: none;
+}
+.logo{
+  align-self: flex-start;
+  margin: 10px 0px 0px 30px;
+
+}
+.menu{
+  display: block;
+  position: absolute;
+  right: 20px;
+  top:25px;
+}
+.showmenu
+{
+  display: block;
+}
+
 }
