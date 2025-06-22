@@ -1,13 +1,8 @@
-
-
-//studentform.js
-
 document.getElementById('studentformdata').addEventListener('submit', async function (e) {
   e.preventDefault();
 
   const formData = new FormData(this);
   const data = Object.fromEntries(formData.entries());
-  
 
   // Convert number 
   data.age = Number(data.age);
@@ -16,9 +11,12 @@ document.getElementById('studentformdata').addEventListener('submit', async func
   data.attendancePercentage = Number(data.attendancePercentage);
   data.academyMark = Number(data.academyMark);
 
+  // 💾 Store current studentId locally
+  localStorage.setItem('currentStudentId', data.studentId);
+
   try {
-   const response = await fetch('https://studentregisterform.onrender.com/api/student/creates', {
-        method: 'POST',
+    const response = await fetch('https://studentregisterform.onrender.com/api/student/creates', {
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
